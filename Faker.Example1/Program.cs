@@ -11,8 +11,7 @@ namespace Faker.UsageExample
         {
             var config = new FakerConfig(); 
             
-            config.Add<User, string, CityGenerator>(user => user.City);
-            config.Add<User, string, NameGenerator>(user => user.Name);
+            config.Add<User, string, CompanyGenerator>(user => user.Name);
             var faker = new Faker(config);
             
             var user = faker.Create<User>();

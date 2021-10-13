@@ -20,7 +20,7 @@ namespace Generator.Collection
         {
             var result = (IList)Activator.CreateInstance(type);
 
-            var count = _random.Next(4) + 2;
+            var count = _random.Next(4) + 3;
             for (var i = 0; i < count; i++)
             {
                 result?.Add(method(argumentType));

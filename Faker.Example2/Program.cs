@@ -4,7 +4,7 @@ using System.Text.Json;
 using CustomGenerator;
 using SPP2_Faker.Faker;
 
-namespace Faker.Example2
+namespace Faker.ExampleMain
 {
     public class Program
     {
@@ -12,7 +12,7 @@ namespace Faker.Example2
         {
             var config = new FakerConfig(); 
             
-            config.Add<C, string, NameGenerator>(c => c.Name);
+            config.Add<C, string, CompanyGenerator>(c => c.Company);            
             var faker = new Faker(config);
             
             var user = faker.Create<A>();
@@ -42,6 +42,7 @@ namespace Faker.Example2
     {
         public char CharProperty { get; set; }
         public byte ByteField;
+        public List<string> DatesPropertyOne { get; set; }
 
         public C C;
 
@@ -53,9 +54,9 @@ namespace Faker.Example2
     
     internal class C
     {
-        public List<DateTime> DatesProperty { get; set; }
+        public List<DateTime> DatesPropertyTwo { get; set; }
         public string RandomString { get; set; }
-        public string Name;
+        public string Company;
         public A A;
         
     }

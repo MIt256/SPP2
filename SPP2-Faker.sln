@@ -1,22 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Test", "Faker.Test\Faker.Test.csproj", "{E62C1626-51F9-46DB-B67A-735572E1D79B}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Test", "Faker.Test\Faker.Test.csproj", "{E62C1626-51F9-46DB-B67A-735572E1D79B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.SDK", "Generator.SDK\Generator.SDK.csproj", "{E321806C-2C70-4D24-AAA0-914A32E29F52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.SDK", "Generator.SDK\Generator.SDK.csproj", "{E321806C-2C70-4D24-AAA0-914A32E29F52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringGenerator", "StringGenerator\StringGenerator.csproj", "{6631A269-2D01-4FF8-847E-CE4E5ACD0236}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringGenerator", "StringGenerator\StringGenerator.csproj", "{6631A269-2D01-4FF8-847E-CE4E5ACD0236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongGenerator", "LongGenerator\LongGenerator.csproj", "{CC0FBD86-18ED-460F-BA03-A647424BDC91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongGenerator", "LongGenerator\LongGenerator.csproj", "{CC0FBD86-18ED-460F-BA03-A647424BDC91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenerator", "CustomGenerator\CustomGenerator.csproj", "{4072A9C3-65FE-4379-BDD5-A290F45AD23A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomGenerator", "CustomGenerator\CustomGenerator.csproj", "{4072A9C3-65FE-4379-BDD5-A290F45AD23A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Lib", "Generator.Lib\Generator.Lib.csproj", "{307A30EF-1B64-4AE8-B93C-94792E4FF031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.Lib", "Generator.Lib\Generator.Lib.csproj", "{307A30EF-1B64-4AE8-B93C-94792E4FF031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Example1", "Faker.Example1\Faker.Example1.csproj", "{D9FA16A7-628E-48B4-B23F-49A81746BF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Lib", "Faker.Lib\Faker.Lib.csproj", "{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Lib", "Faker.Lib\Faker.Lib.csproj", "{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Example2", "Faker.Example2\Faker.Example2.csproj", "{73B065F0-28F3-470F-9F2B-8741E74ED2F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Main", "Faker.Example2\Faker.Main.csproj", "{73B065F0-28F3-470F-9F2B-8741E74ED2F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,10 +49,6 @@ Global
 		{307A30EF-1B64-4AE8-B93C-94792E4FF031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{307A30EF-1B64-4AE8-B93C-94792E4FF031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{307A30EF-1B64-4AE8-B93C-94792E4FF031}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9FA16A7-628E-48B4-B23F-49A81746BF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9FA16A7-628E-48B4-B23F-49A81746BF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9FA16A7-628E-48B4-B23F-49A81746BF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9FA16A7-628E-48B4-B23F-49A81746BF54}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,5 +57,11 @@ Global
 		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE24D4FA-7931-40BF-A5B8-B87BEDE6144D}
 	EndGlobalSection
 EndGlobal

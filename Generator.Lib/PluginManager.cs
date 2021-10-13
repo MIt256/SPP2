@@ -9,7 +9,7 @@ namespace Generator
 {
     public static class PluginManager
     {
-        private const string Dir = "Plugins";
+        private const string Dir = "../../../../Plugins";
 
         public static Dictionary<Type, IGenerator> LoadPlugins(Random random)
         {
@@ -30,11 +30,12 @@ namespace Generator
                 foreach (var pluginType in pluginTypes)
                 {
                     var pluginInstance = (IGenerator)Activator.CreateInstance(pluginType, random);
-                    pluginDictionary.Add(pluginInstance.Type, pluginInstance);
+                    pluginDictionary.Add(pluginInstance.Type, pluginInstance);                    
+                    Console.WriteLine(pluginInstance);
                 }
 
             }
-
+            Console.WriteLine("Get all plugins");
             return pluginDictionary;
         }
 
