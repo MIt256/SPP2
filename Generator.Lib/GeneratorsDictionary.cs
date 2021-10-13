@@ -25,7 +25,7 @@ namespace Generator
         {
             Generators.Add(typeof(bool), new BoolGenerator(Random));
             Generators.Add(typeof(byte), new ByteGenerator(Random));
-            Generators.Add(typeof(char), new CharGenerator(Random));
+            Generators.Add(typeof(string), new StringGenerator(Random));
             Generators.Add(typeof(decimal), new DecimalGenerator(Random));
             Generators.Add(typeof(double), new DoubleGenerator(Random));
             Generators.Add(typeof(float), new FloatGenerator(Random));

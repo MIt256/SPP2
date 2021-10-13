@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Test", "Faker.Test\Fa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.SDK", "Generator.SDK\Generator.SDK.csproj", "{E321806C-2C70-4D24-AAA0-914A32E29F52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringGenerator", "StringGenerator\StringGenerator.csproj", "{6631A269-2D01-4FF8-847E-CE4E5ACD0236}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongGenerator", "LongGenerator\LongGenerator.csproj", "{CC0FBD86-18ED-460F-BA03-A647424BDC91}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomGenerator", "CustomGenerator\CustomGenerator.csproj", "{4072A9C3-65FE-4379-BDD5-A290F45AD23A}"
@@ -17,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.Lib", "Generator.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Lib", "Faker.Lib\Faker.Lib.csproj", "{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Main", "Faker.Example2\Faker.Main.csproj", "{73B065F0-28F3-470F-9F2B-8741E74ED2F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharGenerator", "CharGenerator\CharGenerator.csproj", "{2A32D8EF-07D3-4D1B-8467-DB0AC51CA3AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faker.Main", "Faker.ExampleMain\Faker.Main.csproj", "{5A709B6A-0839-414A-A290-6DC1A7ED0A5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{E321806C-2C70-4D24-AAA0-914A32E29F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E321806C-2C70-4D24-AAA0-914A32E29F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E321806C-2C70-4D24-AAA0-914A32E29F52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6631A269-2D01-4FF8-847E-CE4E5ACD0236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6631A269-2D01-4FF8-847E-CE4E5ACD0236}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6631A269-2D01-4FF8-847E-CE4E5ACD0236}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6631A269-2D01-4FF8-847E-CE4E5ACD0236}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC0FBD86-18ED-460F-BA03-A647424BDC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC0FBD86-18ED-460F-BA03-A647424BDC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC0FBD86-18ED-460F-BA03-A647424BDC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,10 +49,14 @@ Global
 		{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4C7DBCC-B1A8-4D79-9C1D-39C4F2C64FFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73B065F0-28F3-470F-9F2B-8741E74ED2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A32D8EF-07D3-4D1B-8467-DB0AC51CA3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A32D8EF-07D3-4D1B-8467-DB0AC51CA3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A32D8EF-07D3-4D1B-8467-DB0AC51CA3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A32D8EF-07D3-4D1B-8467-DB0AC51CA3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A709B6A-0839-414A-A290-6DC1A7ED0A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A709B6A-0839-414A-A290-6DC1A7ED0A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A709B6A-0839-414A-A290-6DC1A7ED0A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A709B6A-0839-414A-A290-6DC1A7ED0A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

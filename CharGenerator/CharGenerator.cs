@@ -1,14 +1,14 @@
-using System;
+﻿using System;
 using Generator.SDK;
 
-namespace Generator.Primitive
+namespace Plugin.CharGenerator
 {
     public class CharGenerator:IGenerator
     {
         public Type Type => typeof(char);
-        
+
         private readonly Random _random;
-        
+
         public CharGenerator(Random random)
         {
             _random = random;
@@ -16,7 +16,8 @@ namespace Generator.Primitive
 
         public object Generate()
         {
-            return (char)_random.Next('A', 'z'); 
+            return (char)_random.Next('A', 'z');
         }
+
     }
 }
