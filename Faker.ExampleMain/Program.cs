@@ -14,11 +14,11 @@ namespace Faker.ExampleMain
             
             config.Add<C, string, CompanyGenerator>(c => c.Company);            
             var faker = new Faker(config);
-            
-            var user = faker.Create<A>();
+                 
+            var example = faker.Create<A>();
 
             var jsonOptions = new JsonSerializerOptions() { IncludeFields = true, WriteIndented = true };
-            var json = JsonSerializer.Serialize(user, jsonOptions);
+            var json = JsonSerializer.Serialize(example, jsonOptions);
             Console.WriteLine(json);
         }
     }
@@ -28,7 +28,9 @@ namespace Faker.ExampleMain
     {
         public double DoubleProperty { get; }
         public short ShortField;
-        
+        public float FloatField;
+        public string CompanyButString;
+
         public B B;
 
         public A(B b, double doubleProperty)
@@ -37,12 +39,22 @@ namespace Faker.ExampleMain
             DoubleProperty = doubleProperty;
         }
     }
-    
+
+
+    internal class C
+    {
+        public List<DateTime> DatesPropertyTwo { get; set; }
+        public string RandomString { get; set; }
+        public string Company;
+        public A A;
+
+    }
+
     internal class B
     {
         public char CharProperty { get; set; }
-        public byte ByteField;
-        public List<string> DatesPropertyOne { get; set; }
+        public int IntField; 
+        public List<string> StringPropertyOne { get; set; }
 
         public C C;
 
@@ -52,13 +64,5 @@ namespace Faker.ExampleMain
         }
     }
     
-    internal class C
-    {
-        public List<DateTime> DatesPropertyTwo { get; set; }
-        public string RandomString { get; set; }
-        public string Company;
-        public A A;
-        
-    }
     
 }

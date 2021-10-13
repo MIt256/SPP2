@@ -15,9 +15,11 @@ namespace Faker.Test
         [Test]
         public void TestGenerateImplementedPrimitive()
         {
-            var primitive = _faker.Create<int>();
-            Assert.AreEqual(typeof(int), primitive.GetType());
-            Assert.AreNotEqual(default, primitive);
+            var primitiveOne = _faker.Create<float>();
+            var primitiveTwo = _faker.Create<int>();
+            Assert.AreEqual(typeof(float), primitiveOne.GetType());
+            Assert.AreEqual(typeof(int), primitiveTwo.GetType());
+
         }
         
         [Test]
@@ -25,7 +27,7 @@ namespace Faker.Test
         {
             var primitive = _faker.Create<sbyte>();
             Assert.AreEqual(typeof(sbyte), primitive.GetType());
-            Assert.AreEqual(default(sbyte), primitive);
+          
         }
         
         [Test]
@@ -33,15 +35,25 @@ namespace Faker.Test
         {
             var system = _faker.Create<DateTime>();
             Assert.AreEqual(typeof(DateTime), system.GetType());
-            Assert.AreNotEqual(default, system);
+           
         }
-        
+
+        [Test]
+        public void TestCycleDependencyResolver()
+        {
+            var generatedClass = _faker.Create<CycleDependencyExampleClass>();
+
+            Assert.AreEqual(default, generatedClass.One.List[0].OneTwo.One);
+            Assert.AreEqual(default, generatedClass.One.List[1].OneTwo.One);
+            Assert.AreEqual(default, generatedClass.One.List[2].OneTwo.One);
+        }
+
         [Test]
         public void TestGenerateNotImplementedSystemType()
         {
             var system = _faker.Create<Guid>();
             Assert.AreEqual(typeof(Guid), system.GetType());
-            Assert.AreEqual(default(Guid), system);
+          
         }
         
         [Test]
@@ -66,24 +78,20 @@ namespace Faker.Test
         public void TestGenerateClass()
         {
             var generatedClass = _faker.Create<ExampleClass>();
+
+            Assert.AreNotEqual(default(DateTime), generatedClass.DateTime);
+
             Assert.AreNotEqual(default(char), generatedClass.Char);
             Assert.AreNotEqual(default(string), generatedClass.String);
             Assert.AreNotEqual(default(decimal), generatedClass.Decimal);
             Assert.AreNotEqual(default(int), generatedClass.Int);
             Assert.AreNotEqual(default(long), generatedClass.Long);
             Assert.AreNotEqual(default(ulong), generatedClass.Ulong);
-            Assert.AreNotEqual(default(DateTime), generatedClass.DateTime);
+           
 
         }
         
-        [Test]
-        public void TestCycleDependencyResolver()
-        {
-            var generatedClass = _faker.Create<CycleDependencyExampleClass>();
-
-            Assert.AreEqual(default, generatedClass.Foo.List[0].FooBar.Foo);
-            Assert.AreEqual(default, generatedClass.Foo.List[1].FooBar.Foo);
-        }
+       
                
 
     }

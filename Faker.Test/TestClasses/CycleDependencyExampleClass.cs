@@ -4,22 +4,22 @@ namespace Faker.Test.TestClasses
 {
     public class CycleDependencyExampleClass
     {
-        public Foo Foo { get; set; }
+        public One One { get; set; }
     }
 
-    public class Foo
+    public class One
     {
-        public List<Bar> List { get; set; }
+        public List<Two> List { get; set; }
     }
 
-    public class Bar
+    public class Two
     {
-        public FooBar FooBar { get; set; }
+        public OneTwo OneTwo { get; set; }
     }
 
-    public class FooBar
+    public class OneTwo 
     {
-        public Foo Foo { get; set; }
+        public One One { get; set; }
     }
     
 }
